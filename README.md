@@ -33,7 +33,9 @@ Desktop UI:
 ![](/public/screenshots/screenshot-3.png)
 ![](/public/screenshots/screenshot-4.png)
 
+<br/>
 Mobile UI:
+<br/>
 ![](/public/screenshots/screenshot-5.png)
 ![](/public/screenshots/screenshot-6.png)
 
