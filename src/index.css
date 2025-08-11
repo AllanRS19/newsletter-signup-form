@@ -1,1 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+
+    --animate-appear: appear .7s ease-in-out;
+
+    --color-red-custom: hsl(4, 100%, 67%);
+    --color-blue-800: hsl(234, 29%, 20%);
+    --color-blue-700: hsl(235, 18%, 26%);
+    --color-blue-text: #42414f;
+    --color-grey-custom: hsl(0, 0%, 58%);
+
+    --font-roboto: 'Roboto', sans-serif;
+}
+
+body {
+    @apply w-full bg-blue-700 font-roboto;
+}
+
+@layer utilities {
+    .flex-center {
+        @apply flex items-center justify-center;
+    }
+
+    .button-focus {
+        @apply focus:bg-gradient-to-r focus:from-[#ff5a66] focus:to-[#ff634f] focus:shadow-md transition-all ease-in duration-500;
+    }
+
+    .button-error {
+        @apply border-red-400 text-red-400 bg-red-100 placeholder:text-red-400;
+    }
+}
+
+@layer components {
+
+    .ilustration {
+        @apply w-[320px] max-md:w-full h-full bg-[url(/images/illustration-sign-up-desktop.svg)] max-md:bg-[url(/images/illustration-sign-up-tablet.svg)] border-0 outline-none bg-no-repeat bg-left bg-contain max-md:bg-cover rounded-xl max-md:mb-2;
+    }
+
+    .success-card {
+        @apply flex flex-col gap-8 w-[440px] p-12 bg-white shadow-md animate-appear rounded-2xl transition-all max-sm:h-screen;
+    }
+
+    .newsletter-card {
+        @apply h-[520px] max-md:h-screen bg-white py-5 px-4 max-md:px-0 max-md:pt-0 rounded-3xl flex items-center max-md:flex-col-reverse animate-appear;
+    }
+
+    .form-field {
+        @apply w-full py-3.5 px-6 border-[1.5px] border-gray-300 focus:border-blue-800 placeholder:text-grey-custom placeholder:text-[14px] text-[14px] outline-none rounded-lg transition;
+    }
+
+    .form-submit-button, .dismiss-button {
+        @apply w-full p-4 text-center text-white text-sm font-bold bg-blue-800 rounded-lg outline-none cursor-pointer mt-5 transition hover:bg-blue-800/85;
+    }
+
+    .dismiss-button {
+        @apply mt-auto;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
