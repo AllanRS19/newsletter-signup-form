@@ -27,15 +27,13 @@ Users should be able to:
 
 ### Screenshot
 
-Desktop UI:
-
+#### Desktop UI:
 ![](/public/screeshots/screenshot-1.png)
 ![](/public/screenshots/screenshot-2.png)
 ![](/public/screenshots/screenshot-3.png)
 ![](/public/screenshots/screenshot-4.png)
 
-Mobile UI:
-
+#### Mobile UI:
 ![](/public/screenshots/screenshot-5.png)
 ![](/public/screenshots/screenshot-6.png)
 
