@@ -40,7 +40,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/AllanRS19/newsletter-signup-form](https://github.com/AllanRS19/newsletter-signup-form)
-- Live Site URL: [https://browser-manager-extension-challenge.vercel.app/](https://browser-manager-extension-challenge.vercel.app/)
+- Live Site URL: [https://newsletter-signup-form-six.vercel.app/](https://newsletter-signup-form-six.vercel.app/)
 
 ## My process
 
